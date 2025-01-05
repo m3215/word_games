@@ -129,7 +129,7 @@ main() {
 				}
 			}
 
-			// make the guess a char so it can be processed be Word::indicesOf
+			// make the guess a char so it can be processed by Word::indicesOf
 			char guess = guessString[0];
 
 			if(w.contains(guess)) { // check if the guess appears in the word
