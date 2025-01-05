@@ -66,7 +66,7 @@ SecretWord::getYellowsWith(Word guess) {
 
 		int minOccurrencesOfC = std::min(numOccurrencesNotSharedWithSecretWord, numOccurrencesNotSharedWithGuess);
 
-		yellowIndices.insert(notSharedWithSecretWord.begin(), std::ranges::next(notSharedWithSecretWord.begin(), minOccurrencesOfC));
+		yellowIndices.insert(notSharedWithSecretWord.begin(), std::next(notSharedWithSecretWord.begin(), minOccurrencesOfC));
 	}
 
 	return yellowIndices;
